@@ -1,7 +1,7 @@
 # TODO-LIST
 
 ## Preview site:
-[TOTO-LIST](https://eliza-youcode.github.io/TODO-LIST/)
+[TODO-LIST](https://eliza-youcode.github.io/TODO-LIST/)
 
 ## Table of contents:
 
