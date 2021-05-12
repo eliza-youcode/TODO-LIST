@@ -14,6 +14,9 @@
 - HTML
 - CSS
 - BEM
+- Media queries
+- Flexbox
+- Grid
 - ES6+
 
 ## Usage:
