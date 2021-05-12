@@ -8,9 +8,9 @@ This is imply application to create a list of task to do.
 
 What can you do in this application?
 
-- add new task to your list
-- select completed tasks
-- delete tasks from your list
+- Add new task to your list
+- Select completed tasks
+- Delete tasks from your list
 
 ## General info:
 - [General info](#info)
