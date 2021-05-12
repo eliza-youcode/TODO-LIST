@@ -1,3 +1,7 @@
+.form{
+    display: block;
+}
+
 .form__header {
     background-color: #fff;
     padding: 20px;

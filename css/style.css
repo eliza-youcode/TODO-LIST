@@ -12,3 +12,7 @@ html {
    line-height: 1.15;
    font-family: 'Montserrat', sans-serif;
 }
+
+.header {
+    margin: 20px;
+}
