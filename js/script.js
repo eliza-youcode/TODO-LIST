@@ -23,7 +23,7 @@
     }
 
     const toggleTaskDone = (taskIndex) => {
-        tasks [taskIndex].done = !tasks [taskIndex].done; 
+        tasks[taskIndex].done = !tasks[taskIndex].done;
         render();
     }
 
@@ -36,13 +36,12 @@
             });
         });
         const toggleDoneButtons = document.querySelectorAll(".js-done");
-       
+
         toggleDoneButtons.forEach((toggleDoneButton, index) => {
             toggleDoneButton.addEventListener("click", () => {
                 toggleTaskDone(index);
             });
         });
-
     }
 
     const render = () => {
@@ -63,7 +62,6 @@
 
         bindEvents();
     };
-   
 
     const onFormSubmit = (evenet) => {
         evenet.preventDefault();
@@ -81,10 +79,7 @@
         const form = document.querySelector(".js-form");
 
         form.addEventListener("submit", onFormSubmit);
-
-
     };
 
     init();
-
 }

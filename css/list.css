@@ -1,0 +1,11 @@
+.taskList__header{
+padding: 20px;
+margin: 3px;
+background-color: #fff;
+}
+.taskList{
+    padding: 20px;
+    margin: 3px;
+    background-color: #fff;
+    list-style-type: none;
+}
