@@ -9,3 +9,12 @@ background-color: #fff;
     background-color: #fff;
     list-style-type: none;
 }
+
+.taskList__item{
+padding: 10px;
+
+}
+
+.taskList__item--done{
+text-decoration: line-through;
+}
