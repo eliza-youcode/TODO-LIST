@@ -1,4 +1,4 @@
-.form{
+.form {
     display: block;
 }
 
@@ -10,12 +10,20 @@
 
 .form__container {
     background-color: #fff;
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 767px) {
+    .form__container {
+        grid-template-columns: 1fr;
+    }
 }
 
 .form__field {
     padding: 10px;
-    margin: 10px;
+    margin: 20px;
     border: 2px solid #eee;
 }
 
@@ -23,8 +31,14 @@
     background-color: teal;
     color: #fff;
     padding: 10px;
-    margin: 10px;
+    margin: 20px 20px 20px 0;
     border: none;
+}
+
+@media (max-width:767px){
+    .form__button{
+        margin: 0 20px 20px 20px;
+    }
 }
 
 .form__button:hover {
