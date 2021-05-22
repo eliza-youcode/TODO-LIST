@@ -6,14 +6,12 @@ html {
 }
 
 .body{
-   margin: 0 auto;
-   width: 80%;
    background-color: #eee;
-   line-height: 1.15;
    font-family: 'Montserrat', sans-serif;
 }
 
-.header {
-    margin: 20px;
-    padding-top: 20px;
+.container{
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 800px;
 }
