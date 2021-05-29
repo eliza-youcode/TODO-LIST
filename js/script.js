@@ -18,7 +18,7 @@
         render();
     }
 
-    const bindEvents = () => {
+    const bindRemoveEvents = () => {
         const removeButton = document.querySelectorAll(".js-remove");
 
         removeButton.forEach((removeButton, index) => {
@@ -26,6 +26,8 @@
                 removeTask(index);
             });
         });
+    };
+    const bindToggleDoneEvents = () =>{
         const toggleDoneButtons = document.querySelectorAll(".js-done");
 
         toggleDoneButtons.forEach((toggleDoneButton, index) => {
@@ -33,7 +35,9 @@
                 toggleTaskDone(index);
             });
         });
-    }
+    };
+        
+    
 
     const render = () => {
         let htmlString = "";
@@ -54,8 +58,9 @@ ${task.content}
     `;
         }
         document.querySelector(".js-tasks").innerHTML = htmlString;
-
-        bindEvents();
+       
+        bindToggleDoneEvents();
+        bindRemoveEvents();
     };
 
     const onFormSubmit = (evenet) => {
