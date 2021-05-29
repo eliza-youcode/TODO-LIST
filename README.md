@@ -17,6 +17,8 @@ What can you do in this application?
 - [Technologies](#technologies)
 - [Usage](#usage)
 
+
+[TODO-LIST](https://postimg.cc/gnYV31BK)
 ## Technologies:
 - HTML
 - CSS
