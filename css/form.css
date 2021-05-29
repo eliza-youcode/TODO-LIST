@@ -2,25 +2,6 @@
     display: block;
 }
 
-.form__header {
-    background-color: #fff;
-    padding: 20px;
-    margin-bottom: 3px;
-}
-
-.form__container {
-    background-color: #fff;
-    display: grid;
-    grid-template-columns: 1fr auto;
-    margin-bottom: 10px;
-}
-
-@media (max-width: 767px) {
-    .form__container {
-        grid-template-columns: 1fr;
-    }
-}
-
 .form__field {
     padding: 10px;
     margin: 20px;
