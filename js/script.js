@@ -27,7 +27,7 @@
             });
         });
     };
-    const bindToggleDoneEvents = () =>{
+    const bindToggleDoneEvents = () => {
         const toggleDoneButtons = document.querySelectorAll(".js-done");
 
         toggleDoneButtons.forEach((toggleDoneButton, index) => {
@@ -36,8 +36,8 @@
             });
         });
     };
-        
-    
+
+
 
     const render = () => {
         let htmlString = "";
@@ -58,7 +58,7 @@ ${task.content}
     `;
         }
         document.querySelector(".js-tasks").innerHTML = htmlString;
-       
+
         bindToggleDoneEvents();
         bindRemoveEvents();
     };
@@ -66,18 +66,20 @@ ${task.content}
     const onFormSubmit = (evenet) => {
         evenet.preventDefault();
 
-        const newTaskContent = document.querySelector(".js-newTask").value.trim();
+        const newTaskElement = document.querySelector(".js-newTask");
+        const newTaskContent = newTaskElement.value.trim();
 
-        if (newTaskContent === "") {
-            return;
+        if (newTaskContent !== "") {
+            addNewTask(newTaskContent);
+            newTaskElement.value = "";
         }
-        addNewTask(newTaskContent);
+
+        newTaskElement.focus();
     };
 
     const init = () => {
         render();
         const form = document.querySelector(".js-form");
-
         form.addEventListener("submit", onFormSubmit);
     };
 
