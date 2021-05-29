@@ -1,16 +1,15 @@
 .list {
-    padding: 20px;
-    margin-bottom: 3px;
-    margin-top: 3px;
-    background-color: #fff;
+    padding: 0;
+    margin:0;
     list-style-type: none;
 }
 
 .list__item {
-    padding: 10px;
     display: grid;
     grid-template-columns: auto 1fr auto;
-    justify-content: center;
+    grid-gap: 10px;
+    align-items: center;
+    padding: 10px;
     border-bottom: 1px solid #ddd;
 }
 
@@ -31,10 +30,26 @@
     cursor: pointer;
 }
 
-.list__button--done {
-    background-color: green;
+.list__button--toggleDone {
+    background-color: hsl(120, 60%, 35%);
+}
+
+.list__button--toggleDone:hover {
+    background-color: hsl(120, 60%, 40%);
+}
+
+.list__button--toggleDone:active {
+    background-color: hsl(120, 60%, 45%);
 }
 
 .list__button--remove {
-    background-color: red;
+    background-color: hsl(0, 90%, 50%);
+}
+
+.list__button--remove:hover {
+    background-color: hsl(0, 90%, 55%);
+}
+
+.list__button--remove:active {
+    background-color: hsl(0, 90%, 60%);
 }
