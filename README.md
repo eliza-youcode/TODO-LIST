@@ -18,7 +18,7 @@ What can you do in this application?
 - [Usage](#usage)
 
 
-[TODO-LIST](https://i.postimg.cc/pXjsMHf3/TODOLIST.gif)
+![TODO-LIST](https://i.postimg.cc/pXjsMHf3/TODOLIST.gif)
 ## Technologies:
 - HTML
 - CSS
