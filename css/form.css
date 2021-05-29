@@ -1,7 +1,7 @@
 .form {
-    background-color: #fff;
     display: grid;
     grid-template-columns: 1fr auto;
+    grid-gap:20px;
 }
 
 @media (max-width: 767px) {
@@ -12,25 +12,21 @@
 
 .form__field {
     padding: 10px;
-    margin: 20px;
-    border: 2px solid #eee;
+    border: 2px solid #ddd;
 }
 
 .form__button {
-    background-color: teal;
+    background-color: hsl(180, 100%, 25%);
     color: #fff;
     padding: 10px;
-    margin: 20px 20px 20px 0;
     border: none;
     cursor: pointer;
 }
 
-@media (max-width:767px){
-    .form__button{
-        margin: 0 20px 20px 20px;
-    }
+.form__button:hover {
+    background-color: hsl(180, 100%, 30%);
 }
 
-.form__button:hover {
-    border: 2px solid hsl(180, 50%, 25%);
+.form__button:active {
+    background-color: hsl(180, 100%, 35%);
 }
