@@ -1,0 +1,19 @@
+.section__header {
+    padding: 20px;
+    margin-bottom: 3px;
+    margin-top: 3px;
+    background-color: #fff;
+}
+
+.section__body {
+    background-color: #fff;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 767px) {
+    .section__body {
+        grid-template-columns: 1fr;
+    }
+}
