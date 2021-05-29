@@ -51,13 +51,13 @@
             htmlString += `
     <li class="list__item">
     <button class="list__button list__button--toggleDone js-done">
-    ${task.done ? "✓" : " "}
+    ${task.done ? "✔" : " "}
     </button>
 <span class="list__content${task.done ? " list__content--done" : ""}" >
 ${task.content}
 </span>
 
-    <button class="list__button list__button--remove js-remove">U</button> 
+    <button class="list__button list__button--remove js-remove">✘</button> 
     
     </li>
     `;
